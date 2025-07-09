@@ -55,7 +55,12 @@ let newBook = {
       />
     </div>
     <div class="form-control form-control-check">
-      <input type="checkbox" name="readIt" id="readIt" />
+      <input
+        type="checkbox"
+        name="readIt"
+        id="readIt"
+        @click="newBook.isRead = !newBook.isRead"
+      />
       <label for="readIt">Já li o livro</label>
     </div>
 
